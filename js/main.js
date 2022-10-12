@@ -25,29 +25,29 @@
   });
 
 
-  // owl-carousel
-  $('.brand-active').owlCarousel({
-    loop:true,
-    margin:50,
-    responsiveClass:true,
-    nav:false,
-    navText: ['<span class="fas fa-chevron-left fa-2x"></span>','<span class="fas fa-chevron-right fa-2x"></span>'],
-    responsive:{
-        0:{
-            items:1,
-            nav:false
-        },
-        600:{
-            items:3,
-            nav:false
-        },
-        1000:{
-            items:4,
-            nav:false,
-            loop:false
-        }
-    }
-  });
+ // owl-carousel
+ $('.mx-slider').owlCarousel({
+  loop:true,
+  margin:20,
+  responsiveClass:true,
+  nav:false,
+  navText: ['<img src="images/arrow-left.png" alt="">','<img src="images/arrow-right.png" alt="">'],
+  responsive:{
+      0:{
+          items:1,
+          nav:false
+      },
+      600:{
+          items:2,
+          nav:true
+      },
+      1000:{
+          items:3,
+          nav:true,
+          loop:false
+      }
+  }
+});
 
 
 })(jQuery);

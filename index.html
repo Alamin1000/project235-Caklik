@@ -23,23 +23,25 @@
 
 		<!-- offcanvas-start -->
 		<div class="offcanvas-menu">
-			<ul class="offmenu" id="menuParent">
-				<a href="#" class="offcanvas-close"><i class="fa fa-times"></i></a>
-				<li class="active"><a href="#">HOME</a></li>
-				<li><a href="#">ABOUT US</a></li>
-				<li class="dropdown">
-					<a href="#" data-bs-toggle="collapse" data-bs-target='#drop-menu1'>OUR HORSES</a>
-					<div class="dropdown-menu-custom collapse" id="drop-menu1" data-bs-parent="#menuParent">
-						<ul>
-							<li><a href="#">YEARLINGS</a></li>
-							<li><a href="#">2 YEAR OLDS</a></li>
-							<li><a href="#">3 YEAR OLD PLUS</a></li>
-						</ul>
-					</div>
-				</li>
-				<li><a href="#">LATEST NEWS</a></li>
-				<li><a href="#">CONTACT & FIND US</a></li>
-			</ul>
+			<div class="offmenu" id="menuParent">
+				<a href="#" class="offcanvas-close"><i class="far fa-times"></i></a>
+				<ul class="mobile-menu">
+					<li><a class="active" href="">C’est qui?</a></li>
+					<li><a href="">C’est quoi?</a></li>
+					<li><a href="">C’est pour qui?</a></li>
+					<li><a href="">Comment ça marche?</a></li>
+				</ul>
+				<div class="d-flex align-items-center justify-content-center pt-3">
+					<a href="#" class="default-button default-button--bordered">Contact Us</a>
+				</div>
+				<div class="d-flex align-items-center justify-content-center pt-3">
+					<ul class="social-menu">
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 		<div class="offcanvas-overlay"></div>
 		<!-- offcanvas-start-end -->
@@ -53,7 +55,7 @@
 							<img src="images/logo-big.png" alt="">
 						</a>
 	
-						<div class="main-menu">
+						<div class="main-menu d-xl-block d-none">
 							<ul>
 								<li><a class="active" href="">C’est qui?</a></li>
 								<li><a href="">C’est quoi?</a></li>
@@ -62,7 +64,7 @@
 							</ul>
 						</div>
 	
-						<div class="header-right">
+						<div class="header-right d-xl-flex d-none">
 							<ul class="social-menu">
 								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
 								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -70,6 +72,10 @@
 							</ul>
 							<a href="#" class="default-button default-button--bordered">Contact Us</a>
 						</div>
+						
+						<a href="#" class="offcanvas-open d-xl-none">
+							<i class="far fa-bars"></i>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -84,9 +90,9 @@
 						<div class="hero-content">
 							<img src="images/hero-bg-chat.png" alt="" class="hero-big-chat-icon">
 							<h1 class="h1">le gout du <span class="color-theme1">néerlandais</span> 
-								<br class="d-xl-block d-none">
+								<br class="d-lg-block d-none">
 								et le plaisir 
-								<br class="d-xl-block d-none">
+								<br class="d-lg-block d-none">
 								de la <span class="color-theme1">rencontre</span></h1>
 							<a href="#" class="default-button bottom-button">Comment ça marche?</a>
 						</div>
@@ -117,7 +123,7 @@
 					<div class="what-section-inner">
 						<div class="what-title sec-cont-blk center-this">
 							<h2 class="h2">
-								<span class="color-theme1">C’est Quoi?</span>
+								<span class="color-theme1 text-uppercase">C’est Quoi?</span>
 							</h2>
 							<h2 class="h2-ex">Atteindre les <br>
 								...</h2>
@@ -125,6 +131,7 @@
 						</div>
 
 						<div class="what-content">
+							<img src="images/what-shape1.png" alt="" class="what-cont-shape1">
 							<div class="image-row">
 								<img src="images/what-image.png" alt="">
 							</div>
@@ -152,12 +159,13 @@
 
 			<!-- is-this-section -->
 			<section class="is-this-section">
+				<img src="images/is-this-shape-bl.png" alt="" class="is-this-shape1">
 				<div class="container">
 					<div class="is-this-section-inner">
 						<div class="is-this-content-row">
 							<div class="text-side">
-								<h2 class="h2 color-theme1">C’est pourqui?</h2>
-								<p>Tu es en primaire ou secondaire, et apprends le néerlandais. Vous êtes professeurs ou directeurs d´école, ou parents qui avez envie de dynamiser l’apprentissage de la langue et l ´ouverture de vos enfants. Quel que soit ton niveau, fais avec ta classe une des activités ´ca klik´ pour vivre le néerlandais.</p>
+								<h2 class="h2 color-theme1 text-uppercase">C’est pourqui?</h2>
+								<p>Tu es en primaire ou secondaire, et apprends le néerlanda-is. Vous êtes professeurs ou directeurs d´école, ou parents qui avez envie de dynamiser l’apprentissage de la langue et l ´ouverture de vos enfants. Quel que soit ton niveau, fais avec ta classe une des activités ´ca klik´ pour vivre le néerlandais.</p>
 								<p>Tu es en primaire ou secondaire, et apprends le néerlandais. Vous êtes professeurs ou directeurs d´école, ou parents qui avez envie de dynamiser l’apprentissage de la langue et l ´ouverture de vos enfants. Quel que soit ton niveau, fais avec ta classe une des activités ´ca klik´ pour vivre le néerlandais.</p>
 							</div>
 							<div class="img-side">
@@ -171,14 +179,15 @@
 
 
 			<!-- comment-section -->
-			<section class="comment-section">
+			<section class="comment-section position-relative">
+				<img class="comment-object" src="images/is-this-shape-bl.png" alt="">
 				<div class="container">
 					<div class="comment-section-inner">
-						<div class="comment-section-title">
-							<h2 class="h2 color-theme1 mb-0">COMment ça marche?</h2>
+						<div class="comment-section-title text-center">
+							<h2 class="h2 color-theme1 mb-0 text-uppercase">COMment ça marche?</h2>
 						</div>
 
-						<div class="comment-op-row">
+						<div class="comment-op-row mx-auto">
 							<!-- comment-op-single -->
 							<div class="comment-op">
 								<div class="icon">
@@ -225,13 +234,46 @@
 				<div class="container">
 					<div class="mx-section-inner">
 						<div class="mx-section-title">
-							<h2 class="h2">C’est Qui?</h2>
+							<h2 class="h2 text-uppercase">C’est Qui?</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei usmod tempor incid idunt ut labore et dolore magna aliqua. 
 								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam</p>
 						</div>
-
+						
 						<div class="mx-slicer-outer">
-							<div class="mx-slider slider-arrow1 slider-arrow-center">
+							<div class="mx-slider slider-arrow1 slider-arrow-center owl-carousel">
+								<!-- slide -->
+								<div class="mx-slide">
+									<div class="image">
+										<img src="images/t-user1.png" alt="">
+									</div>
+									<div class="content">
+										<h3>Valentine</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei usmod tempor incid idunt ut labore et dolore magna aliqua. </p>
+									</div>
+								</div>
+								<!-- slide-end -->
+								<!-- slide -->
+								<div class="mx-slide">
+									<div class="image">
+										<img src="images/t-user2.png" alt="">
+									</div>
+									<div class="content">
+										<h3>Emile</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei usmod tempor incid idunt ut labore et dolore magna aliqua. </p>
+									</div>
+								</div>
+								<!-- slide-end -->
+								<!-- slide -->
+								<div class="mx-slide">
+									<div class="image">
+										<img src="images/t-user3.png" alt="">
+									</div>
+									<div class="content">
+										<h3>Eric</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei usmod tempor incid idunt ut labore et dolore magna aliqua. </p>
+									</div>
+								</div>
+								<!-- slide-end -->
 								<!-- slide -->
 								<div class="mx-slide">
 									<div class="image">
@@ -275,7 +317,7 @@
 		</main><!-- main end -->
 
 		<!-- footer-section -->
-		<footer class="footer-section">
+		<footer class="footer-section position-relative">
 			<div class="container">
 				<div class="footer-section-inner">
 					<!-- footer-top -->
@@ -297,22 +339,17 @@
 									<li><a href="#">C’est Quoi?</a></li>
 									<li><a href="#">C’est Pourqui?</a></li>
 									<li><a href="#">Comment ça marche?</a></li>
-								</ul>
-							</div>
-							<!-- footer-menu-column-end -->
-							<!-- footer-menu-column -->
-							<div class="footer-menu-column">
-								<h4 class="d-xl-block d-none">&nbsp;</h4>
-								<ul class="footer-menu">
+
 									<li><a href="#">Projets</a></li>
 									<li><a href="#">Soutien Financier</a></li>
 									<li><a href="#">Raconte-nous...</a></li>
 								</ul>
 							</div>
 							<!-- footer-menu-column-end -->
+							
 							<!-- footer-menu-column -->
-							<div class="footer-menu-column">
-								<h4 class="d-xl-block d-none">&nbsp;</h4>
+							<div class="footer-social-column">
+								<h4 class="d-xl-block d-none">Contact Us</h4>
 								<ul class="social-menu">
 									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
 									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -333,6 +370,9 @@
 					<!-- footer-bottom-end -->
 				</div>
 			</div>
+
+			<img class="footer-object1" src="images/footer-object.png" alt="">
+
 		</footer><!--End footer-section -->
 	</div><!-- main-wrap -->
 	
