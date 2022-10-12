@@ -1,0 +1,737 @@
+/*-----------------------------------=========Main-Style-Sheet=========----------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700;900&display=swap');
+@font-face {
+  font-family: 'DIN';
+  src: url('webfonts/DIN-BoldAlternate.woff2') format('woff2'),
+      url('webfonts/DIN-BoldAlternate.woff') format('woff'),
+      url('webfonts/DIN-BoldAlternate.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Benilla Calligraphy';
+  src: url('webfonts/BenillaCalligraphy.woff2') format('woff2'),
+      url('webfonts/BenillaCalligraphy.woff') format('woff'),
+      url('webfonts/BenillaCalligraphy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'American Typewriter';
+  src: url('webfonts/AmericanTypewriter-Bold.woff2') format('woff2'),
+      url('webfonts/AmericanTypewriter-Bold.woff') format('woff'),
+      url('webfonts/AmericanTypewriter-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'American Typewriter';
+  src: url('webfonts/AmericanTypewriter-Condensed.woff2') format('woff2'),
+      url('webfonts/AmericanTypewriter-Condensed.woff') format('woff'),
+      url('webfonts/AmericanTypewriter-Condensed.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'American Typewriter';
+  src: url('webfonts/AmericanTypewriter-CondensedBold.woff2') format('woff2'),
+      url('webfonts/AmericanTypewriter-CondensedBold.woff') format('woff'),
+      url('webfonts/AmericanTypewriter-CondensedBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'American Typewriter';
+  src: url('webfonts/AmericanTypewriter-CondensedLight.woff2') format('woff2'),
+      url('webfonts/AmericanTypewriter-CondensedLight.woff') format('woff'),
+      url('webfonts/AmericanTypewriter-CondensedLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'American Typewriter';
+  src: url('webfonts/AmericanTypewriter-Light.woff2') format('woff2'),
+      url('webfonts/AmericanTypewriter-Light.woff') format('woff'),
+      url('webfonts/AmericanTypewriter-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'American Typewriter';
+  src: url('webfonts/AmericanTypewriter.woff2') format('woff2'),
+      url('webfonts/AmericanTypewriter.woff') format('woff'),
+      url('webfonts/AmericanTypewriter.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: 'Cocomat';
+  src: url('webfonts/Cocomat-Italic.woff2') format('woff2'),
+      url('webfonts/Cocomat-Italic.woff') format('woff'),
+      url('webfonts/Cocomat-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cocomat';
+  src: url('webfonts/Cocomat-UltraLightItalic.woff2') format('woff2'),
+      url('webfonts/Cocomat-UltraLightItalic.woff') format('woff'),
+      url('webfonts/Cocomat-UltraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cocomat';
+  src: url('webfonts/Cocomat.woff2') format('woff2'),
+      url('webfonts/Cocomat.woff') format('woff'),
+      url('webfonts/Cocomat.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cocomat';
+  src: url('webfonts/Cocomat-HeavyItalic.woff2') format('woff2'),
+      url('webfonts/Cocomat-HeavyItalic.woff') format('woff'),
+      url('webfonts/Cocomat-HeavyItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cocomat';
+  src: url('webfonts/Cocomat-BoldItalic.woff2') format('woff2'),
+      url('webfonts/Cocomat-BoldItalic.woff') format('woff'),
+      url('webfonts/Cocomat-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cocomat';
+  src: url('webfonts/Cocomat-Heavy.woff2') format('woff2'),
+      url('webfonts/Cocomat-Heavy.woff') format('woff'),
+      url('webfonts/Cocomat-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cocomat';
+  src: url('webfonts/Cocomat-Bold.woff2') format('woff2'),
+      url('webfonts/Cocomat-Bold.woff') format('woff'),
+      url('webfonts/Cocomat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cocomat';
+  src: url('webfonts/Cocomat-UltraLight.woff2') format('woff2'),
+      url('webfonts/Cocomat-UltraLight.woff') format('woff'),
+      url('webfonts/Cocomat-UltraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cocomat';
+  src: url('webfonts/Cocomat-Light.woff2') format('woff2'),
+      url('webfonts/Cocomat-Light.woff') format('woff'),
+      url('webfonts/Cocomat-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cocomat';
+  src: url('webfonts/Cocomat-LightItalic.woff2') format('woff2'),
+      url('webfonts/Cocomat-LightItalic.woff') format('woff'),
+      url('webfonts/Cocomat-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
+
+:root {
+  --theme__color1: #c53629;
+  --theme__color2: #5a9b93;
+  --theme__color3: #139C94;
+  --lato: 'Lato', sans-serif;
+  --cardo: 'Cardo', serif;
+  --din-alternate: 'DIN';
+  --american-typeWriter: 'American Typewriter';
+  --benilla-Calligraphy: 'Benilla Calligraphy';
+  --cocomat: 'Cocomat';
+}
+*,::before,::after {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  word-break: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--lato);
+}
+a, a:active, a:focus, a:active, a:hover {
+  text-decoration:none !important;
+  color: inherit;
+}
+input{
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a:hover,
+a:focus,
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+select:active,
+textarea:focus,
+textarea:hover,
+button:focus {
+  outline: none;
+}
+::placeholder {
+  opacity: 1;
+}
+:focus::placeholder {
+  opacity: 0;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed; /* Prevents HTML tables from becoming too wide */
+  width: 100%;
+}
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+iframe {
+  width: 100%;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+  font-weight: 700;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+p{
+  margin-bottom: 15px;
+}
+p:last-child{
+  margin: 0;
+}
+.main-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+
+
+
+/* header */
+.header-section {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.header-in {
+  padding: 44px 0;
+}
+.header-section-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 173px;
+  display: inline-flex;
+}
+.header-logo img {
+
+}
+
+.main-menu {
+  padding: 16px 0 0;
+}
+.main-menu > ul {
+  display: flex;
+}
+.main-menu > ul > li {
+  margin-right: 38px;
+}
+.main-menu > ul > li:last-child {
+  margin-right: 0;
+}
+.main-menu > ul > li > a {
+  font-size: 20.83px;
+  font-weight: 400;
+  color: #515155;
+  font-family: var(--din-alternate);
+  transition: 0.3s;
+}
+.main-menu > ul > li > a:hover {
+  color: var(--theme__color1);
+}
+.main-menu > ul > li > a.active {
+  color: var(--theme__color1);
+}
+
+.header-right {
+  padding: 19px 0 0 15px;
+  margin-right: -60px;
+  display: flex;
+  align-items: center;
+}
+.header-right .social-menu {
+  margin-right: 25px;
+}
+.social-menu {
+  display: flex;
+}
+.social-menu li {
+  margin-right: 10px;
+}
+.social-menu li:last-child {
+  margin-right: 0;
+}
+.social-menu li a {
+  height: 28px;
+  width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.social-menu li a:hover {
+  background: var(--theme__color1);
+}
+
+/* ---offcanvas-css--- */
+.offcanvas-open {
+  font-size: 22px;
+  transition: 0.3s;
+}
+.offcanvas-open:hover {
+  color: #97A3AE;
+}
+.offcanvas-close {
+  color: var(--theme__color1);
+  position: absolute;
+  transition: 0.3s;
+  right: 25px;
+  top: 25px;
+}
+.offcanvas-close:hover {
+  color: #97A3AE;
+}
+.offcanvas-menu {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transform: translateX(-105%);
+  transition: 0.3s;
+}
+.offcanvas-menu.active {
+  transform: translate(0);
+}
+.offcanvas-menu .offmenu {
+  max-width: 250px;
+  min-width: 200px;
+  z-index: 5;
+  position: relative;
+  background: #d5dce2;
+  height: 100%;
+  padding: 50px 20px 40px;
+  overflow: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.offcanvas-menu .offmenu :-webkit-scrollbar {
+  display: none;
+}
+.offcanvas-menu ul li a {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  color: var(--theme__color1);
+  padding: 10px;
+}
+.offcanvas-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.178);
+  z-index: 2;
+  transform: 0;
+  z-index: 900;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.offcanvas-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+/* ---offcanvas-css-end---*/
+/* ---------------------header-end----------------- */
+/* --preloader-- */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid var(--theme__color1);
+  border-top-color: #e2eefd;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+@-webkit-keyframes animate-preloader {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+@keyframes animate-preloader {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+/* --preloader-end-- */
+
+
+/* ---hero-section--- */
+.hero-section {
+  padding: 60px 0 0;
+}
+.hero-section-inner {
+
+}
+
+.hero-content {
+  padding: 48px 0 71px;
+  position: relative;
+}
+.hero-big-chat-icon {
+  position: absolute;
+  top: 0;
+  right: -60px;
+}
+.hero-content .h1 {
+  font-size: 89px;
+  line-height: 1;
+  font-family: var(--din-alternate);
+  color: var(--theme__color3);
+  text-transform: uppercase;
+}
+.hero-content .bottom-button {
+  margin: 34px 0 0;
+}
+/* ---hero-section---end */
+
+
+/* ---hero-x-section--- */
+.hero-x-section {
+  padding: 20px 0;
+  background: #2B2B2B;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.hero-x-shape1 {
+  position: absolute;
+  top: -55px;
+  left: 0;
+  z-index: -1;
+}
+.hero-x-section-inner {
+  position: relative;
+  z-index: 1;
+}
+.hero-x-shape2 {
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  z-index: -1;
+}
+.hero-x-section-inner .t1 {
+  font-size: 46px;
+  margin: 0 0 43px 0;
+  font-family: var(--american-typeWriter);
+  font-weight: 500;
+  color: var(--theme__color3);
+}
+.hero-x-section-inner .t2 {
+  font-size: 37.5px;
+  margin: 0 0 0 -110px;
+  line-height: 1;
+  font-weight: 500;
+  font-family: var(--benilla-Calligraphy);
+  color: #e9e7e7;
+}
+.hero-x-section-inner .t3 {
+  font-size: 37.5px;
+  font-weight: 400;
+  font-family: var(--cocomat);
+  color: var(--theme__color1);
+}
+/* ---hero-x-section---end */
+
+
+
+/* ---what-section--- */
+.what-section {
+
+}
+.what-section-inner {
+
+}
+
+.what-title {
+
+}
+.what-title .h2 {
+
+}
+.what-title .h3 {
+
+}
+
+.what-content {
+
+}
+.what-content .image-row {
+
+}
+.what-content .image-row img {
+
+}
+.what-content .row2 {
+
+}
+.what-content .row2 .title-side {
+
+}
+.what-content .row2 .title-side .h3 {
+
+}
+.what-content .row2 .text-side {
+
+}
+.what-content .row2 .text-side p {
+
+}
+/* ---what-section---end */
+
+
+
+/* ---is-this-section--- */
+.is-this-section {
+
+}
+.is-this-section-inner {
+
+}
+
+.is-this-content-row {
+
+}
+.is-this-content-row .text-side {
+
+}
+.is-this-content-row .text-side .h2 {
+
+}
+.is-this-content-row .text-side p {
+
+}
+.is-this-content-row .img-side {
+
+}
+.is-this-content-row .img-side img {
+
+}
+/* ---is-this-section----end */
+
+
+
+/* ---comment-section--- */
+.comment-section {
+
+}
+.comment-section-inner {
+
+}
+.comment-section-title {
+
+}
+
+.comment-op-row {
+
+}
+.comment-op {
+
+}
+.comment-op .icon {
+
+}
+.comment-op .icon img {
+
+}
+.comment-op .content {
+
+}
+.comment-op .content p {
+
+}
+.comment-op .content .bottom-button {
+
+}
+/* ---comment-section---end */
+
+
+
+/* ---mx-section--- */
+.mx-section {
+
+}
+.mx-section-inner {
+
+}
+.mx-section-title {
+
+}
+.mx-section-title .h2 {
+
+}
+.mx-section-title p {
+
+}
+
+.mx-slider-outer {
+
+}
+.mx-slider {
+
+}
+.mx-slide {
+
+}
+.mx-slide .image {
+
+}
+.mx-slide .image img {
+
+}
+.mx-slide .content {
+
+}
+.mx-slide .content h3 {
+
+}
+.mx-slide .content p {
+
+}
+/* ---mx-section---end */
+
+
+
+/* ---footer-section--- */
+.footer-section {
+
+}
+.footer-section-inner {
+
+}
+
+.footer-top
+.footer-top-inner
+.footer-logo-column
+.footer-logo-column .footer-logo
+.footer-logo-column .footer-logo img
+.footer-menu
+.footer-menu li
+.footer-menu li:last-child
+.footer-menu li a
+.footer-menu li a:hover
+/* ---footer-section---end */
