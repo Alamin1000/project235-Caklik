@@ -255,6 +255,14 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6{
   font-weight: 700;
 }
+.h2 {
+  font-size: 81.46px;
+  font-family: var(--din-alternate);
+}
+.h2-ex {
+  font-size: 97px;
+  font-family: var(--cardo);
+}
 ul{
     margin: 0;
     padding: 0;
@@ -559,6 +567,19 @@ p:last-child{
 
 
 
+/* ---sec-cont-blk--- */
+.sec-cont-blk {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sec-cont-blk.center-this {
+  align-items: center;
+  text-align: center;
+}
+/* ---sec-cont-blk---end */
+
+
 /* ---what-section--- */
 .what-section {
 
@@ -724,14 +745,4 @@ p:last-child{
 
 }
 
-.footer-top
-.footer-top-inner
-.footer-logo-column
-.footer-logo-column .footer-logo
-.footer-logo-column .footer-logo img
-.footer-menu
-.footer-menu li
-.footer-menu li:last-child
-.footer-menu li a
-.footer-menu li a:hover
 /* ---footer-section---end */
